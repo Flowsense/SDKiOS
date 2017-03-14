@@ -21,8 +21,10 @@
 - (void) restartUpdates;
 - (void) PostJsonLocation:(NSString *)latitude :(NSString *)longitude :(NSDate *)date_arr :(NSDate *)date_dep :(double)accuracy;
 - (void) sendEvent:(NSString *)latitude :(NSString *)longitude :(NSString *)dateArr :(NSString *)dateDep :(NSString *)duration :(double)accuracy :(int)points;
-- (void) sendCheckin:(NSDictionary *) dict;
+- (void) sendCheckin:(NSMutableDictionary *) dict;
 - (void) sendDeparture:(NSDictionary *) dict;
-- (void) extendTimer;
+
+//- (void) sendEventForce;
+//- (void) sendCheckInForce;
 
 @end

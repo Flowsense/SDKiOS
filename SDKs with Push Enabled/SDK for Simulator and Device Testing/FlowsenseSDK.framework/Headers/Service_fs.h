@@ -11,12 +11,4 @@
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 +(NSString *) getSDKVersion;
 
-
-+(NSArray *) getStoredGeofences;
-+(void) downloadGeofences;
-+(void) removeGeofences;
-+(void) dropDB;
-+(NSArray *) getLogs;
-+(void) clearLogs;
-
 @end
