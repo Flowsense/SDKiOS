@@ -11,4 +11,5 @@
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 +(NSString *) getSDKVersion;
 
++(void) test;
 @end

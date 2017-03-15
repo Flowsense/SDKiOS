@@ -8,6 +8,7 @@
 + (void) setKeyValue:(NSString *)key valueDouble:(double)value;
 
 + (void) updateServer:(NSDictionary *)keyValue;
++ (void) commitChanges;
 
 
 @end
