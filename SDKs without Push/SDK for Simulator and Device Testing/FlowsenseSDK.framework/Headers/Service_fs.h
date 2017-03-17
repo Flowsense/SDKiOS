@@ -11,5 +11,7 @@
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 +(NSString *) getSDKVersion;
 
-+(void) test;
++(void) updateGeofences;
++(NSArray *) getStoredGeofences;
++(NSArray *) getKeyValues;
 @end
