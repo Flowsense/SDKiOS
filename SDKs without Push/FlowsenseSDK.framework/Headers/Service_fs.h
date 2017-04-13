@@ -7,7 +7,7 @@
 
 //+(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 //+(void) postToken:(NSData *)token;
-//+(void) sendPushToken:(NSString *)token;
++(void) sendPushToken:(NSString *)token;
 
 +(void) StartMonitoringLocation;
 +(void) StartMonitoringLocationReact;
