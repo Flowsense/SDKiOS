@@ -18,4 +18,5 @@
 +(void) updateGeofences;
 +(NSArray *) getStoredGeofences;
 +(NSArray *) getKeyValues;
+
 @end
