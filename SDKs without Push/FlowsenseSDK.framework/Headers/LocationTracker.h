@@ -23,7 +23,6 @@
 - (void) sendEvent:(NSString *)latitude :(NSString *)longitude :(NSString *)dateArr :(NSString *)dateDep :(NSString *)duration :(double)accuracy :(int)points;
 - (void) sendCheckin:(NSMutableDictionary *) dict;
 - (void) sendDeparture:(NSDictionary *) dict;
-+(void) checkLocationOn;
 
 //- (void) sendEventForce;
 //- (void) sendCheckInForce;

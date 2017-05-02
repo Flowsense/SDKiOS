@@ -12,5 +12,7 @@
 +(NSNumber *)GetDoubleNullable:(NSString *)key;
 +(void)AddFailedData:(NSString *)key :(NSData *)value;
 +(NSData *)GetFailedData:(NSString *)key;
++(void)AddPushDict:(NSString *)key :(NSDictionary *)value;
++(NSDictionary *)GetPushDict:(NSString *)key;
 
 @end

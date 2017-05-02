@@ -7,9 +7,9 @@
 
 +(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 +(void) sendPushToken:(NSString *)token;
++(NSDictionary *) getPushExtras;
 
 +(void) StartMonitoringLocation;
-+(void) StartMonitoringLocationReact;
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 
 +(void) updateGeofences;
