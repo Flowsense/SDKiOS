@@ -6,7 +6,7 @@
 +(void) StartFlowsenseService:(NSString *)partnerToken :(BOOL) startNow;
 
 +(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
-+(void) sendPushToken:(NSString *)token;
++(void) sendPushToken:(NSData *)token;
 +(NSDictionary *) getPushExtras;
 
 +(void) StartMonitoringLocation;
@@ -16,6 +16,6 @@
 +(NSArray *) getStoredGeofences;
 +(NSArray *) getKeyValues;
 
-//+(NSArray *) getEvents;
+
 
 @end
