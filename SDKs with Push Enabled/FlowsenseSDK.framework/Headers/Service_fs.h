@@ -16,6 +16,6 @@
 +(NSArray *) getStoredGeofences;
 +(NSArray *) getKeyValues;
 
-+(void) insertToDB:(long) rows;
+//+(NSArray *) getEvents;
 
 @end
