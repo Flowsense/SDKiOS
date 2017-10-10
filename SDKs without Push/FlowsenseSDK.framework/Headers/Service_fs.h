@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 //+(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 //+(void) includeMediaAttachmentWithRequest:(UNNotificationRequest *)request mutableContent:(UNMutableNotificationContent *)bestAttemptContent contentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
 
-//+(void) sendPushToken:(NSData *)token;
++(void) sendPushToken:(NSData *)token;
 +(NSDictionary *) getPushExtras;
 
 +(void) StartMonitoringLocation;
