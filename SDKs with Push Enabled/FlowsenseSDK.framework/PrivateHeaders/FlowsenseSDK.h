@@ -1,11 +1,3 @@
-//
-//  SDK.h
-//  SDK
-//
-//  Created by Rafael on 24/08/16.
-//  Copyright © 2016 Rafael Goldenberg. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import <SDK/Service_fs.h>
 #import <SDK/LocationTracker.h>
