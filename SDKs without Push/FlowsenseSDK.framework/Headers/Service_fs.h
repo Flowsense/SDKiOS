@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 //Push Services
 //+(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 //+(void) StartFlowsensePushServiceWithLaunchOptions:(NSDictionary *) launchOptions actionBlock:(void(^)(NSDictionary *result))completionHandler;
-//+(void) includeMediaAttachmentWithRequest:(UNNotificationRequest *)request mutableContent:(UNMutableNotificationContent *)bestAttemptContent contentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
++(void) includeMediaAttachmentWithRequest:(UNNotificationRequest *)request mutableContent:(UNMutableNotificationContent *)bestAttemptContent contentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
 
 +(void) sendPushToken:(NSData *)token;
 +(NSDictionary *) getPushExtras;
