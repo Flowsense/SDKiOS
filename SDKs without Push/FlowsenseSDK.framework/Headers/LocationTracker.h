@@ -3,6 +3,8 @@
 #import "LocationShareModel.h"
 #import <UIKit/UIKit.h>
 #import "DBGeofences.h"
+#import <AWSCore/AWSCore.h>
+#import <AWSKinesis/AWSKinesis.h>
 
 @interface LocationTracker : NSObject <CLLocationManagerDelegate>
 
@@ -10,8 +12,10 @@
 
 @property (strong,nonatomic) LocationShareModel * shareModel;
 @property (strong,nonatomic) NSMutableArray * insideGeofencesWithId;
+@property (strong,nonatomic) NSTimer * checkInTimer;
 @property (strong,nonatomic) NSMutableArray * checkInTimers;
 @property (strong,nonatomic) NSTimer * timer;
+@property (strong,nonatomic) AWSFirehoseRecorder *firehoseRecorder;
 
 @property (nonatomic) NSDate* distPast;
 @property (nonatomic) NSDate* distFuture;

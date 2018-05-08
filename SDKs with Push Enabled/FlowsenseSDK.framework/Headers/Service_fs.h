@@ -8,19 +8,24 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) StartFlowsenseService:(NSString *)partnerToken :(BOOL) startNow;
 
 //Push Services
+
 +(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 +(void) StartFlowsensePushServiceWithLaunchOptions:(NSDictionary *) launchOptions actionBlock:(void(^)(NSDictionary *result))completionHandler;
 +(void) includeMediaAttachmentWithRequest:(UNNotificationRequest *)request mutableContent:(UNMutableNotificationContent *)bestAttemptContent contentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
++(void) setPushCallback:(void(^)(NSDictionary *result))completionHandler;
 
 +(void) sendPushToken:(NSData *)token;
 +(NSDictionary *) getPushExtras;
 
 +(void) StartMonitoringLocation;
++(void) requestWhenInUseLocation;
++(void) requesAlwaysLocation;
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 
 +(void) updateGeofences;
 +(NSArray *) getStoredGeofences;
 +(NSArray *) getKeyValues;
+
 NS_ASSUME_NONNULL_END
 
 @end
