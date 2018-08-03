@@ -35,7 +35,7 @@
 - (NSArray*) getMonitoredRegions;
 - (void) sendCheckInAfterTimer:(NSTimer *)timer;
 - (void) startSignificantLocationChanges;
-//- (void) sendEventForce;
+- (void) sendEventForce;
 //- (void) sendCheckInForce;
 
 @end
