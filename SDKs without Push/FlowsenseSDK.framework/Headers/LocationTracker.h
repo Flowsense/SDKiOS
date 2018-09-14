@@ -29,7 +29,8 @@
 - (void) sendEvent:(NSString *)latitude :(NSString *)longitude :(NSString *)dateArr :(NSString *)dateDep :(NSString *)duration :(double)accuracy :(int)points;
 - (void) sendCheckin:(NSMutableDictionary *) dict;
 - (void) sendDeparture:(NSDictionary *) dict;
-- (void) monitorRegionWithName:(NSString *)name latitude:(double)latitude longitude:(double)longitude radius:(double)radius;
+- (void) monitorRegionsWithLocation:(CLLocation *) location;
+//- (void) monitorRegionWithName:(NSString *)name latitude:(double)latitude longitude:(double)longitude radius:(double)radius;
 - (void) monitorNearestRegionsWithLocation:(CLLocation *)location previousLocation:(CLLocation *)oldLocation;
 - (void) stopMonitoringAllRegions;
 - (NSArray*) getMonitoredRegions;
