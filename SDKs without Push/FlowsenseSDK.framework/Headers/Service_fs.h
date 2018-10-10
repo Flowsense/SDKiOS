@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void) sendPushClickAnalytics:(NSString *)pushUUID;
 +(void) sendPushArrivedAnalytics:(NSString *)pushUUID;
++(void) flowsenseHandlePushWithUserInfo:(NSDictionary*) userInfo fetchCompletionHandler:(nullable void (^)(UIBackgroundFetchResult))completionHandler;
 
 +(void) sendPushToken:(NSData *)token;
 +(NSDictionary *) getPushExtras;
