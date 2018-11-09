@@ -11,5 +11,6 @@
 +(void) StartFlowsensePushService:(NSDictionary *) launchOptions;
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
 +(void) downloadGeofences;
++(NSString *) getDeviceID;
 
 @end
