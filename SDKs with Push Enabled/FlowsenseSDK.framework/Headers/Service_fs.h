@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface Service_fs : NSObject
 
@@ -34,9 +35,17 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSDictionary *) getPushExtras;
 
 +(void) StartMonitoringLocation;
++(void) requestLocationAuthorizationStatusAsync:(void(^)(int status)) callback;
++(int) requestLocationAuthorizationStatus;
 +(void) requestWhenInUseLocation;
-+(void) requesAlwaysLocation;
++(void) requestAlwaysLocation;
++(void) requestWhenInUseLocationWithCallback:(void(^)(int status)) callback;
++(void) requestAlwaysLocationWithCallback:(void(^)(int status)) callback;
 +(void) updatePartnerUserIdiOS:(NSString *) userId;
++(void) requestPushToken;
++(void) isRegisteredForPush;
++(BOOL) isInsideHome;
++(BOOL) isInsideWork;
 
 +(void) updateGeofences;
 +(NSArray *) getStoredGeofences;

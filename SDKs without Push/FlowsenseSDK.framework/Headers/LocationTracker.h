@@ -11,8 +11,6 @@
 @property (nonatomic) CLLocationCoordinate2D myLastLocation;
 
 @property (strong,nonatomic) LocationShareModel * shareModel;
-@property (strong,nonatomic) NSMutableArray * insideGeofencesWithId;
-@property (strong,nonatomic) NSTimer * checkInTimer;
 @property (strong,nonatomic) NSMutableArray * checkInTimers;
 @property (strong,nonatomic) NSTimer * timer;
 @property (strong,nonatomic) AWSFirehoseRecorder *firehoseRecorder;
@@ -37,6 +35,9 @@
 - (void) sendCheckInAfterTimer:(NSTimer *)timer;
 - (void) startSignificantLocationChanges;
 - (void) sendEventForce;
+- (void) setAuthorizationCallback:(void(^)(int status)) completionHandler;
+- (void) checkLocationServices;
+- (int) checkLocationServicesInstantly;
 //- (void) sendCheckInForce;
 
 @end
