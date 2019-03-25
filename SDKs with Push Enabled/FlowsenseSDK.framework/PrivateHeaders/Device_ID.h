@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface DeviceUID : NSObject
+@interface FSDeviceUID : NSObject
 + (NSString *)uid;
 + (NSString *)appleIFV;
 + (NSString *)randomUUID;
