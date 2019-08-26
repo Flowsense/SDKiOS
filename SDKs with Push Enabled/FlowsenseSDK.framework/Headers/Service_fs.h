@@ -7,6 +7,8 @@
 NS_ASSUME_NONNULL_BEGIN
 +(void) StartFlowsenseService:(NSString *)partnerToken;
 +(void) StartFlowsenseService:(NSString *)partnerToken :(BOOL) startNow;
++(void) StartFlowsenseService:(NSString *)partnerToken disableActivityMonitoring:(BOOL) shouldNotMonitor;
++(void) StartFlowsenseService:(NSString *)partnerToken disableActivityMonitoring:(BOOL) shouldNotMonitor startLocationNow:(BOOL) startNow;
 
 //Push Services
 
@@ -26,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Open a deeplink with an app URI and, optionally, an Itunes Store link for app installation and the store app ID
 +(void) openDeepLinkWithURI:(NSString *)appURI storeLink:(NSString *)itunesLink storeID:(NSNumber *)appID;
+
+// Stops Flowsense Services until StartFlowsenseService is called again with the correct location permissions
++(void) StopFlowsenseService;
 
 +(void) sendPushClickAnalytics:(NSString *)pushUUID;
 +(void) sendPushArrivedAnalytics:(NSString *)pushUUID;
@@ -48,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) isRegisteredForPush;
 +(BOOL) isInsideHome;
 +(BOOL) isInsideWork;
++(void) monitorApplicationActivity;
 
 +(void) updateGeofences;
 +(NSArray *) getStoredGeofences;

@@ -22,6 +22,7 @@
 + (CLLocationManager *)sharedLocationManager;
 
 - (void) startLocationTracking;
+- (void) stopLocationTracking;
 - (void) restartUpdates;
 - (void) PostJsonLocation:(NSString *)latitude :(NSString *)longitude :(NSDate *)date_arr :(NSDate *)date_dep :(double)accuracy;
 - (void) sendEvent:(NSString *)latitude :(NSString *)longitude :(NSString *)dateArr :(NSString *)dateDep :(NSString *)duration :(double)accuracy :(int)points;
@@ -38,6 +39,8 @@
 - (void) setAuthorizationCallback:(void(^)(int status)) completionHandler;
 - (void) checkLocationServices;
 - (int) checkLocationServicesInstantly;
+- (void) requestLocationForInAppEvent;
+- (void) setLocationCallback:(void(^)(CLLocation *location)) completionHandler;
 //- (void) sendCheckInForce;
 
 @end
