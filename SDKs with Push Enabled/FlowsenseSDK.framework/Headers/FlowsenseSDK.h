@@ -3,6 +3,8 @@
 #import <FlowsenseSDK/InAppEvents.h>
 #import <FlowsenseSDK/Cordova.h>
 #import <FlowsenseSDK/KeyValuesManager.h>
+#import <FlowsenseSDK/FlowsenseInAppMessage.h>
+#import <FlowsenseSDK/FlowsenseInAppButton.h>
 
 //! Project version number for SDK.
 FOUNDATION_EXPORT double SDKVersionNumber;

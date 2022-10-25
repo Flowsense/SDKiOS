@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 #import <CoreLocation/CoreLocation.h>
+#import "FlowsenseInAppMessage.h"
+#import "FlowsenseInAppButton.h"
 
 @interface Service_fs : NSObject
 
@@ -25,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Set a Push callback when push is received and clicked with:
 // result is @{@"push_token": "token", @"push_received": <NSDictionary containing payload>, @"push_clicked": <NSDictionary containing payload>}
 +(void) setPushCallback:(void(^)(NSDictionary *result))completionHandler;
++(void) setInAppMessageCallback:(void(^)(FlowsenseInAppMessage *success, FlowsenseInAppMessage *dismiss, FlowsenseInAppButton *button))completionHandler;
 
 +(void) setNotificationResponseHandler:(void(^)(UNNotificationResponse *response))completionHandler;
 
