@@ -7,7 +7,6 @@
 + (void) setKeyValue:(NSString *)key valueBoolean:(BOOL)value;
 + (void) setKeyValue:(NSString *)key valueDouble:(double)value;
 
-+ (void) updateServer:(NSDictionary *)keyValue;
 + (void) commitChanges;
 
 
